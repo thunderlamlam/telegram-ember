@@ -1,0 +1,107 @@
+
+body {
+	font-family: "Open Sans";
+	background-color:#008CB8;
+}
+
+
+input::-webkit-input-placeholder {
+	font-size: 13px; color: #000000;
+}
+
+input:-moz-placeholder {
+	font-style: italic;
+	font-size: 13px; color: #000000;
+}
+
+.login-box {
+	position:absolute;
+	background: white;
+	height: 370px;
+	width: 900px;
+	top: 15%;
+	left: 18.5%;
+
+}
+
+.Get-going {
+	position: relative;
+	background:white;
+	height: 20px;
+	width: 200px;
+	font-weight: 600;
+	font-size: 22px;
+	color: #000000;
+	left: 10%;
+	top: 30%;
+}
+
+.textbox {
+	border:none; 
+	width:200px; 
+	height:20px; 
+	font-size: 13px;
+}
+
+
+.Enter-username-password {
+	position: relative;
+	background:white;
+	height: 30px;
+	width: 320px;
+	font-size: 13px;
+	color: #000000;
+	left: 10%;
+	top: 40%;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.Recover-password {
+	position: relative;
+	background:white;
+	height: 20px;
+	width: 200px;
+	font-size: 13px;
+	color: #000000;
+	left: 35%;
+	top: 50%;
+}
+
+
+.Login-button {
+	position:absolute;
+	background:white;
+	height: 22px;
+	width: 50px;
+	font-size: 13px;
+	color: #0084B2;
+	font-weight: bold;
+	border: 1px solid #0084B2;
+	padding:5px;
+	left: 10%;
+	top: 80%;
+	text-decoration : none;
+	text-align: center;
+
+}
+
+
+.rightbox {
+	height: 300px;
+	width: 450px;
+    position: relative;
+    border-left: 1px solid #EEEEEE;
+    left: 50%;
+    top: 5%;
+}
+
+.leftbox {
+    position: relative;
+	background:white;
+	height: 20px;
+	width: 200px;
+	font-size: 13px;
+	color: #0084B2;
+	left: 12%;
+	top: 40%;
+}
