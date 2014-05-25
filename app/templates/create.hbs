@@ -1,7 +1,6 @@
 <section id="main">
         {{outlet}}
 </section>
-
 <div class="login-box">
   <div class="leftbox">
     <img src="telegram-logo.png" align = "center">
@@ -19,7 +18,7 @@
     <div class ="Enter-username-password">
       {{input type="password" class="textbox" name="password" id="password" placeholder="Enter your password ..."}}
     </div>
-    {{#link-to "create.login" class="Login-button"}}Log in{{/link-to}}
+    <button type="submit" class="Login-button" {{action "login"}}>Log in</button>
     <div class ="Recover-password">
       <a href="#" style="text-decoration : none; color:#008CB8">Recover password</a> or <a href="#" style="text-decoration : none; color:#008CB8">Sign up</a>
     </div>
