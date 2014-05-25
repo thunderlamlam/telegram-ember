@@ -3,11 +3,13 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-	this.resource('create', { path: '/'}, function () {
+	this.resource('create', { path: '/'}
+		//, function () {
 		//additional child routes
-		this.route('login');
+	//	this.route('login');
 		
-	});
+	//}
+	);
 });
 
 export default Router;

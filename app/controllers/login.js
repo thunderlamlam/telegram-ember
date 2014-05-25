@@ -4,7 +4,7 @@ export default Ember.ObjectController.extend({
   	  //if(this.get("username") === 'model.username' && this.get('password') === 'model.password'){
       //  alert('Login succeeded!');
 
-        this.transitionToRoute('create.login');
+        //this.transitionToRoute('create.login');
 
   	  }
     
