@@ -11,12 +11,12 @@
       Get going ...
     </div>
     <div class ="Enter-username-password">
-      {{input type="text" class="textbox" name="username" id="username" placeholder="Enter your username ..."}}
+      {{input type="text" class="textbox" id="username" placeholder="Enter your username ..." value=newUsername action="login"}}
     </div>
     <p></p>
     
     <div class ="Enter-username-password">
-      {{input type="password" class="textbox" name="password" id="password" placeholder="Enter your password ..."}}
+      {{input type="password" class="textbox" id="password" placeholder="Enter your password ..." value=newPassword action="login"}}
     </div>
     <button type="submit" class="Login-button" {{action "login"}}>Log in</button>
     <div class ="Recover-password">
