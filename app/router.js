@@ -8,8 +8,8 @@ Router.map(function() {
     this.route('recover_pw');
     this.route('reset_pw');
     this.resource('login', {path: '/:user_id' }, function(){
-	  this.route('post');
-	  });
+      this.route('post');
+      });
 		
     });
 });
