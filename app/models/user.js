@@ -1,5 +1,4 @@
 var User = DS.Model.extend({
-  username: DS.attr('string'),
   password: DS.attr('string'),
   profile_image: DS.attr('string'),
   follower: DS.attr('string')
@@ -9,8 +8,7 @@ var User = DS.Model.extend({
 User.reopenClass({
   FIXTURES: [
   {
-    id: "1",
-    username: 'emily',
+    id: "emily",
     password: '1234',
     profile_image: '/img/profile.jpg',
     follower: 'maggie'
