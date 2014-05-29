@@ -9,6 +9,7 @@ Router.map(function() {
     this.route('reset_pw');
     this.resource('login', {path: '/:user_id' }, function(){
       this.route('post');
+      this.route('followers');
       });
 		
     });
