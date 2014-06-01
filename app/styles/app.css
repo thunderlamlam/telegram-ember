@@ -36,6 +36,18 @@ input:-moz-placeholder {
 	top: 30%;
 }
 
+.resettextbox {
+	position: relative;
+	background:white;
+	height: 30px;
+	width: 320px;
+	font-size: 13px;
+	color: #000000;
+	left: 10%;
+	top: 40%;
+	border:none; 
+}
+
 .textbox {
 	border:none; 
 	width:200px; 

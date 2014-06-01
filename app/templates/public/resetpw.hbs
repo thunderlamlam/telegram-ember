@@ -1,1 +1,14 @@
-<h1>resetpw</h1>
+<div class="Get-going">
+  Reset your password
+</div>
+<div class ="Enter-username-password">
+  {{input type="text" class="textbox" id="username" placeholder="Enter your username ..." value=newUsername action="login"}}
+</div>
+<p></p>
+<div class ="Enter-username-password">
+  {{input type="password" class="textbox" id="email" placeholder="Enter your email address ..." value=newPassword action="login"}}
+</div>
+  {{#link-to "public.resetconfirm" activeClass="selected"}}<button type="submit" class="Login-button">reset</button>{{/link-to}}
+<div class ="Login-link">
+  {{#link-to "public.create" activeClass="selected"}}Sign up{{/link-to}}
+</div>

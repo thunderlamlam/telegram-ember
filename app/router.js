@@ -16,7 +16,7 @@ Router.map(function() {
   this.resource('public', { 'path' : '/'}, function() {
     this.route('create', { 'path' : '/' });
     this.route('login', { 'path' : '/login' });
-    this.route('resetpw', { 'path' : '/resetpw’' });
+    this.route('resetpw', { 'path' : '/resetpw' });
     this.route('resetconfirm', { 'path' : '/resetpw/confirm' });
   });
 
