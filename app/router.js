@@ -3,16 +3,37 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('create', { path: '/'}, function () {
+  //this.resource('create', { path: '/'}, function () {
   //additional child routes
-    this.route('recover_pw');
-    this.route('reset_pw');
-    this.resource('login', {path: '/:user_id' }, function(){
-      this.route('post');
-      this.route('followers');
-      });
+  //  this.route('recover_pw');
+  //  this.route('reset_pw');
+  //  this.resource('login', {path: '/:user_id' }, function(){
+  //    this.route('post');
+  //    this.route('followers');
+  //    });
 		
+  //  });
+  this.resource('public', { 'path' : '/'}, function() {
+    this.route('create', { 'path' : '/' });
+    this.route('login', { 'path' : '/login' });
+    this.route('resetpw', { 'path' : '/resetpw’' });
+    this.route('resetconfirm', { 'path' : '/resetpw/confirm' });
+  });
+
+
+  this.resource('users', function() {
+    this.resource('user', {'path' : '/:user_id'}, function() {
+      // this.route(‘index’, {path: ‘/’});
+      this.route('following');
+      this.route('followers');
     });
+  });
+  
+  this.route('dashboard');  // URL: /users/dashboard
 });
 
+
 export default Router;
+
+
+  
