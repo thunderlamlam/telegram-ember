@@ -21,7 +21,7 @@ export default Ember.ObjectController.extend({
           loginFailed:false
         });
       //trying to send it to /login page
-        controller.transitionToRoute('users');
+        controller.transitionToRoute('dashboard');
       }
       else{
       //failure

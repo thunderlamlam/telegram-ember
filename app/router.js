@@ -29,7 +29,7 @@ Router.map(function() {
     });
   });
   
-  this.route('dashboard');  // URL: /users/dashboard
+  this.route('dashboard');  // URL: /dashboard
 });
 
 
