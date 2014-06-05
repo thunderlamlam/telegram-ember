@@ -1,9 +1,9 @@
 export default Ember.Route.extend({
 
-  model: function() {
-    return this.store.find('user');
+  model: function(params, transition) {
+    return { user: params.user };
   },
-  renderTemplate: function(controller) {
-    this.render('users', {controller: controller});
-  }
+  serialize: function(model) {
+    return { user: model.get('user') };
+  } 
 });

@@ -1,5 +1,10 @@
 export default Ember.Route.extend({
-  //user_id: emily,
+  model: function(params, transition) {
+    return { user: params.user_id };
+  },
+  serialize: function(model) {
+    return { user: model.get('user_id') };
+  },
   renderTemplate: function(controller) {
     this.render('dashboard');
     this.render('topbar', {into: 'dashboard', outlet: 'topbar'});
