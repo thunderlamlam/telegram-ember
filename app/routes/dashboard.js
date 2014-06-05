@@ -1,7 +1,5 @@
 export default Ember.Route.extend({
-  model: function() {
-    return this.store.find('user');
-  },	
+  //user_id: emily,
   renderTemplate: function(controller) {
     this.render('dashboard');
     this.render('topbar', {into: 'dashboard', outlet: 'topbar'});

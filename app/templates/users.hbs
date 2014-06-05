@@ -1,4 +1,5 @@
-<h1>post</h1>
-{{#link-to "users" activeClass="selected"}}Posts{{/link-to}}	
-{{#link-to "users" activeClass="selected"}}Following{{/link-to}}	
-{{#link-to "users" activeClass="selected"}}Followers{{/link-to}}	
+<h1>users</h1>
+{{outlet}}
+{{#link-to "user" activeClass="selected"}}Posts{{/link-to}}	
+{{#link-to "user.following" activeClass="selected"}}Following{{/link-to}}	
+{{#link-to "user.followers" activeClass="selected"}}Followers{{/link-to}}	
