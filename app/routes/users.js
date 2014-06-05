@@ -1,5 +1,4 @@
 export default Ember.Route.extend({
-  //user_id: emily,
 
   model: function() {
     return this.store.find('user');
