@@ -24,6 +24,29 @@ input:-moz-placeholder {
 
 }
 
+.dcontent {
+	background:white;
+	position:absolute;
+	height: 500px;
+	width: 700px;
+	top: 15%;
+	left: 27%;
+	text-align: center
+}
+
+.topbar {
+	position:absolute;
+	font-weight: 600;
+	font-size: 22px;
+	height: 300px;
+	width: 300px;
+	top: 5%;
+	left: 40%;
+	text-align: center
+
+
+}
+
 .Get-going {
 	position: relative;
 	background:white;

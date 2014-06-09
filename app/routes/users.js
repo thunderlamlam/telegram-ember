@@ -5,5 +5,5 @@ export default Ember.Route.extend({
   },
   serialize: function(model) {
     return { user: model.get('user_id') };
-  } 
+  }
 });

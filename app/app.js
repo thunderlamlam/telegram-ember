@@ -10,4 +10,10 @@ var App = Ember.Application.extend({
 
 loadInitializers(App, 'telegram');
 
+//App.register('session:main', Session);
+//App.inject('controller', 'session', 'session:main');
+//App.IndexController = Ember.Controller.extend({
+//  isLoggedIn: Ember.computed.alias('session.isAuthenticated')
+//});
+
 export default App;
