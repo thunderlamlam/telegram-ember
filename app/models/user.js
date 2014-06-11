@@ -1,7 +1,8 @@
 var User = DS.Model.extend({
   password: DS.attr('string'),
   profile_image: DS.attr('string'),
-  follower: DS.attr('string')
+  follower: DS.hasMany('user')
+  //user is put there because you are inputting the user object
 
 });
 
