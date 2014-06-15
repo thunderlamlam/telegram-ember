@@ -21,13 +21,12 @@ Router.map(function() {
   });
 
 
-  this.resource('users', function() {
-    this.resource('user', {'path' : '/:user_id'}, function() {
+
+  this.resource('user', {'path' : '/users/:user_id'}, function() {
       // this.route(‘index’, {path: ‘/’});
       this.route('following');
       this.route('followers');
     });
-  });
   
   this.route('dashboard');  // URL: /dashboard
 });
