@@ -11,7 +11,7 @@ User.reopenClass({
   {
     id: "emily",
     password: '1234',
-    profile_image: '/img/profile.jpg',
+    profileImage: '/img/profile.jpg',
     follower: 'maggie'
   }
 ]});
