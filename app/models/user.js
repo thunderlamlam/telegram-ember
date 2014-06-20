@@ -17,7 +17,16 @@ User.reopenClass({
     follower: 'maggie',
     posts: '1',
     following: 'cece'
+  },
+  {
+    id: "maggie",
+    password: '1234',
+    profileImage: '/img/profile.jpg',
+    follower: 'emily',
+    posts: '1',
+    following: 'cece'
   }
+
 ]});
 
 export default User;
