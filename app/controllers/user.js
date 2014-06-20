@@ -1,26 +1,7 @@
 export default Ember.ObjectController.extend({
-  isFollowers: true,
-  actions: {
-    followers: function() {
-      var controller = this;
-      var promise = this.store.find('user', username);
-      promise.then(function(userobject){
-        
-        if(userobject.get('follower')){
-      
-          console.log('hihi');
-          this.set('isFollowers', true);
-      
-      }
-      else{
-      //failure
-        console.log('no');
-        this.set('isFollowers', false);
-      }        
-        })
-      
-      
-    }
-  }
+  uppercaseName: function() {
+    console.log('The session object is accessible from any controller:', this.get('session.user.name'), this.get('session.isAuthenticated'));
+    return this.get('model').get('name').toUpperCase();
+  }.property('model.name')
   
 });
