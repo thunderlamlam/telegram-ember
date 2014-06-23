@@ -8,11 +8,11 @@ Post.reopenClass({
   FIXTURES: [
   {
     id: "1",
-    user_id: '1',
+    user_id: 'emily',
     post_content: 'Hello World!'
   }, {
     id: "2",
-    user_id: '2',
+    user_id: 'maggie',
     post_content: 'Hello Maggie!'
   }
 ]});

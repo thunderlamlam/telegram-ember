@@ -9,7 +9,7 @@ export default Ember.ObjectController.extend({
       var password = this.get('newPassword');
       //console.log(username);
       //console.log(password);
-      
+      //userobject is returned by my query
       var promise = this.store.find('user', username);
       promise.then(function(userobject){
         //console.log(userobject);
@@ -20,6 +20,7 @@ export default Ember.ObjectController.extend({
           controller.setProperties({
           loginFailed:false
         });
+          controller.get('session').set('user', userobject);
       //trying to send it to /login page
         controller.transitionToRoute('dashboard');
       }

@@ -1,10 +1,12 @@
 <div class=topbar>
-	user
+	{{user}}
 </div>
 
 <div class=dcontent>
   {{#link-to "user" activeClass="selected"}}Posts{{/link-to}}	
-  {{#link-to "user.following" activeClass="selected"}}Following{{/link-to}}	
-  <button {{action "followers"}}>Followers</button>
+  {{#link-to "user.following" activeClass="selected"}}Following{{/link-to}}
+  {{#link-to "user.followers" activeClass="selected"}}Followers{{/link-to}}		
   {{outlet}}
+  
 </div>
+

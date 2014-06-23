@@ -1,6 +1,7 @@
 var User = DS.Model.extend({
   password: DS.attr('string'),
-  profile_image: DS.attr('string'),
+  name: DS.attr('string'),
+  profileImage: DS.attr('string'),
   follower: DS.hasMany('user'),
   posts: DS.hasMany('post'),
   following: DS.hasMany('user')
@@ -12,8 +13,9 @@ User.reopenClass({
   FIXTURES: [
   {
     id: "emily",
+    name: "Emily Lam",
     password: '1234',
-    profileImage: '/img/profile.jpg',
+    profileImage: '/img/profile1.jpg',
     follower: 'maggie',
     posts: '1',
     following: 'cece'
@@ -21,8 +23,9 @@ User.reopenClass({
   ,
   {
     id: "maggie",
+    name: "Maggie Lam",
     password: '1234',
-    profileImage: '/img/profile.jpg',
+    profileImage: '/img/profile2.jpg',
     follower: 'emily',
     posts: '1',
     following: 'cece'
