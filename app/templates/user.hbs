@@ -3,10 +3,10 @@
 </div>
 
 <div class=dcontent>
-  {{#link-to "user" activeClass="selected"}}Posts{{/link-to}}	
-  {{#link-to "user.following" activeClass="selected"}}Following{{/link-to}}
-  {{#link-to "user.followers" activeClass="selected"}}Followers{{/link-to}}		
+  {{#link-to "user" id activeClass="selected"}}Posts{{/link-to}}	
+  {{#link-to "user.followers" id activeClass="selected"}}Followers{{/link-to}}		
+  {{#link-to "user.following" id activeClass="selected"}}Following{{/link-to}}
   {{outlet}}
-  
 </div>
+
 
