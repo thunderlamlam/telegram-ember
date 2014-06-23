@@ -17,7 +17,8 @@ User.reopenClass({
     follower: 'maggie',
     posts: '1',
     following: 'cece'
-  },
+  }
+  ,
   {
     id: "maggie",
     password: '1234',

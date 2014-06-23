@@ -6,9 +6,8 @@ export default Ember.Route.extend({
   //  return { user: model.get('user_id') };
   //} ,
   model: function () {
-    return Ember.Object.create({
-      name: 'Emily'
-    });
+    return Ember.Object.create(
+    {name: 'emily'});
   }, 
   setupController: function(controller, model) {
     console.log('The session object is accessible from any route:', this.get('session.isAuthenticated'));
