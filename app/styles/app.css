@@ -1,7 +1,7 @@
 
 body {
 	font-family: "Open Sans";
-	background-color:#008CB8;
+	background-color:#0084B2;
 }
 
 
@@ -26,49 +26,39 @@ input:-moz-placeholder {
 
 .dcontent {
 	background:white;
-	top: 15%;
+	position:absolute; 
+	top: 45%;
 	left: 27%;
 	text-align: center
 }
-.topbar {
-	top: 0%;
-	left: 27%;
-	height: 20%;
-	width: 100%;
-	font-weight: 500;
-	font-size: 14px;
-	background-color: white;
-}
 
-
-.topbar_center {
-	top: 35%;
-	left: 27%;
-	height: 70px;
-	width: 120px;
-	font-weight: 500;
-	font-size: 14px;
-	background-color: white;
-
-
-}
 .topbar_left {
-	height: 70px;
-	width: 100px;
-	font-weight: 500;
-	font-size: 14px;
-	background-color: white;
+	position:absolute; 
+	width: 150px; 
+	height: 60px; 
+	background-color:white;
+	text-align: center;
+
+
+}
+.topbar_center {
+	position:absolute; 
+	left:600px; 
+	width: 150px; 
+	height: 60px; 
+	background-color:white;
+	text-align: center;
 
 
 }
 
 .topbar_right {
-	height: 70px;
-	width: 120px;
-	font-weight: 500;
-	font-size: 14px;
-	background-color: white;
-
+	position:absolute;
+	left:1200px; 
+	width: 150px; 
+	height: 60px; 
+	background-color:white;
+	text-align: center;
 
 }
 
