@@ -2,8 +2,10 @@ var User = DS.Model.extend({
   password: DS.attr('string'),
   name: DS.attr('string'),
   profileImage: DS.attr('string'),
-  follower: DS.hasMany('user'),
+  //followers: DS.attr('string'),
+  followers: DS.hasMany('user'),
   posts: DS.hasMany('post'),
+  //following: DS.attr('string')
   following: DS.hasMany('user')
   //user is put there because you are inputting the user object
 
@@ -16,9 +18,10 @@ User.reopenClass({
     name: "Emily Lam",
     password: '1234',
     profileImage: '/img/profile1.jpg',
-    follower: 'maggie',
+    followers: ['maggie'],
+    //has many needs to take an array
     posts: '1',
-    following: 'cece'
+    following: ['cece']
   }
   ,
   {
@@ -26,9 +29,18 @@ User.reopenClass({
     name: "Maggie Lam",
     password: '1234',
     profileImage: '/img/profile2.jpg',
-    follower: 'emily',
+    followers: ['emily'],
     posts: '1',
-    following: 'cece'
+    following: ['cece']
+  },
+  {
+    id: "cece",
+    name: "Cecilia Lam",
+    password: '1234',
+    profileImage: '/img/profile2.jpg',
+    followers: ['maggie'],
+    posts: '1',
+    following: ['emily']
   }
 
 ]});

@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     //return this.modelFor('user').get('followers')
   //}
   model: function () {
-    return this.get('session').get('user');
+    return this.modelFor('user').get('followers');
   },
   renderTemplate: function(controller) {
     this.render('user/followers', {controller: controller});
