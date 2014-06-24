@@ -17,7 +17,7 @@ User.reopenClass({
     id: "emily",
     name: "Emily Lam",
     password: '1234',
-    profileImage: '/img/profile1.jpg',
+    profileImage: 'profile1.jpg',
     followers: ['maggie'],
     //has many needs to take an array
     posts: '1',
