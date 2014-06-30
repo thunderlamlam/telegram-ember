@@ -28,7 +28,25 @@ input:-moz-placeholder {
 .dcontent {
 	background:white;
 	position:absolute; 
-	top: 45%;
+	top: 25%;
+	left: 27%;
+	text-align: center
+}
+
+.dcontent2 {
+	background:white;
+	position:absolute; 
+	top: 70%;
+	left: 45%;
+	text-align: center;
+	border-bottom: 1px solid #0084B2;
+	border-top: 1px solid #0084B2;
+}
+
+.dcontent3 {
+	background:white;
+	position:absolute; 
+	top: 90%;
 	left: 27%;
 	text-align: center
 }
@@ -144,7 +162,22 @@ input:-moz-placeholder {
 	border-radius:4px;
 }
 
+.Publish-button {
+	position:absolute;
+	background:white;
+	height: 30px;
+	width: 80px;
+	font-size: 13px;
+	color: #0084B2;
+	font-weight: bold;
+	border: 1px solid #0084B2;
+	padding:5px;
+	left: 80%;
+	top: 100%;
+	text-decoration : none;
+	text-align: center;
 
+}
 
 .Login-button {
 	position:absolute;
