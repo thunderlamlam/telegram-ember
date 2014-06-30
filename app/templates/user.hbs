@@ -1,12 +1,19 @@
-<div class=topbar>
-	{{name}}
+<div class="profile_topbar_center">
+  <img src="dash-logo.png" height="42" width="125">	
+  <!--{{uppercaseName}} -->
 </div>
 
-<div class=dcontent>
+<div class="profile_content1">
+  <img src="profile1.jpg" height="70" width="70"> 
+  <p>{{#link-to "user" id activeClass="selected"}}{{name}}{{/link-to}}</p>
+  <!--{{uppercaseName}} -->
+</div>
+
+<div class="profile_content2">
   {{#link-to "user" id activeClass="selected"}}Posts{{/link-to}}	
   {{#link-to "user.followers" id activeClass="selected"}}Followers{{/link-to}}		
   {{#link-to "user.following" id activeClass="selected"}}Following{{/link-to}}
-  {{outlet}}
+  <p>{{outlet}}</p>
 </div>
 
 

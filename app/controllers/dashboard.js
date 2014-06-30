@@ -6,12 +6,11 @@ export default Ember.ObjectController.extend({
   }.property('model.name'),
 
   actions: {
-  	edit: function() {
-  	  var controller = this;
-  	  controller.set('isEditing', true);
+  	publish: function() {
+  	  this.set('isEditing', true);
   	  },
   	doneEditing: function() {
-  	  controller.set('isEditing', false);
+      this.set('isEditing', false);
   	  }
   },
 

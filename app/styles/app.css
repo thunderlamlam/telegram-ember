@@ -81,6 +81,42 @@ input:-moz-placeholder {
 
 }
 
+.profile_topbar_center {
+	position:absolute; 
+	left:600px; 
+	width: 150px; 
+	height: 60px; 
+	background-color:white;
+	text-align: center;
+
+
+}
+
+.profile_content1 {
+	position:absolute; 
+	left:600px; 
+	width: 150px; 
+	height: 60px; 
+	background-color:white;
+	text-align: center;
+	top: 20%;
+
+
+}
+
+.profile_content2 {
+	background:white;
+	position:absolute; 
+	top: 60%;
+	left: 42%;
+	text-align: center;
+	border-bottom: 1px solid #0084B2;
+	border-top: 1px solid #0084B2;
+
+
+}
+
+
 .Get-going {
 	position: relative;
 	background:white;
@@ -173,7 +209,7 @@ input:-moz-placeholder {
 	border: 1px solid #0084B2;
 	padding:5px;
 	left: 80%;
-	top: 100%;
+	top: 75%;
 	text-decoration : none;
 	text-align: center;
 
