@@ -16,7 +16,8 @@ export default Ember.ObjectController.extend({
   },
 
   txtCount: function() {
-    return this.get('postBody.length');
+  	var maxLength = 140;
+    return maxLength - this.get('postBody.length');
   }.property('postBody')
 
   ,

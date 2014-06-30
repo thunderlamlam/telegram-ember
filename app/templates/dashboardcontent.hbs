@@ -3,7 +3,7 @@
     <button type="submit" class="Publish-button" {{action 'doneEditing'}}>Done</button>
   {{else}}
     <p>{{textarea value=postBody cols="80" rows="6"}}</p> 
-    <p>{{txtCount}} {{characters}}</p>
+    <p>{{txtCount}} {{characters}} remaining</p>
     <button type="submit" class="Publish-button" {{action 'edit'}}>Publish</button>
   {{/if}}
   <!--{{#link-to "user" id activeClass="selected"}}Posts{{/link-to}} -->	
