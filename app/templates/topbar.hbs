@@ -1,12 +1,12 @@
-
 <div class="topbar_left">
-  <img src="homeicon.png" height="40" width="42"> home
+  <img src="homeicon.png" height="40" width="42">Home
 </div>
 <div class="topbar_center">
   <img src="dash-logo.png" height="42" width="125">	
-  <!--{{uppercaseName}}-->
+  <!--{{uppercaseName}} -->
 </div>
 <div class="topbar_right">
-  <img src="profile1.jpg" height="40" width="40"> {{name}}
-  <!--{{uppercaseName}}-->
+  <img src="profile1.jpg" height="40" width="40"> 
+  {{#link-to "user" id activeClass="selected"}}{{name}}{{/link-to}}
+  <!--{{uppercaseName}} -->
 </div>
