@@ -6,7 +6,8 @@
   <!--{{uppercaseName}} -->
 </div>
 <div class="topbar_right">
-  <img src="profile1.jpg" height="40" width="40"> 
+  <!--<img src="profile1.jpg" height="40" width="40">-->
+  <img {{bind-attr src=profileImage}} height="40" width="40">  
   {{#link-to "user" id activeClass="selected"}}{{name}}{{/link-to}}
   <!--{{uppercaseName}} -->
 </div>

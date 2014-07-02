@@ -1,5 +1,5 @@
 {{#each followering in controller}}
 <!-- follower is just a variable that can be named anything !-->
-{{followering.name}}
+<a {{bind-attr href=followering.id}}>{{followering.name}}</a>
 
 {{/each}}
