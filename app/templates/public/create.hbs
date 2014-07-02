@@ -2,15 +2,15 @@
   Create your account
 </div>
 <div class ="Enter-username-password">
-  {{input type="text" class="textbox" id="name" placeholder="Enter your name ..." value=newName action="login"}}
+  {{input type="text" class="textbox" id="name" placeholder="Enter your name ..." value=newName action="create"}}
 </div>
 <div class ="Enter-username-password">
-  {{input type="text" class="textbox" id="username" placeholder="Enter your username ..." value=newUsername action="login"}}
+  {{input type="text" class="textbox" id="username" placeholder="Enter your username ..." value=newUsername action="create"}}
 </div>
 <div class ="Enter-username-password">
-  {{input type="password" class="textbox" id="password" placeholder="Enter your password ..." value=newPassword action="login"}}
+  {{input type="password" class="textbox" id="password" placeholder="Enter your password ..." value=newPassword action="create"}}
 </div>
-<button type="submit" class="signup-button" {{action "signup"}}> Sign up </button>
+<button type="submit" class="signup-button" {{action "create"}}> Sign up </button>
 <div class ="Login-link">
   {{#link-to "public.login" activeClass="selected"}}Login{{/link-to}}	
 </div>
