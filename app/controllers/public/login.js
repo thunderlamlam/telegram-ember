@@ -14,9 +14,8 @@ export default Ember.ObjectController.extend({
       promise.then(function(userobject){
         //console.log(userobject);
         //check the password since the username is already checked
-        if(password == userobject.get('password')){
-      
-          console.log('hihi');
+        if(password === userobject.get('password')){
+
           controller.setProperties({
           loginFailed:false
         });
@@ -30,7 +29,7 @@ export default Ember.ObjectController.extend({
         loginFailed:true
         });
       }        
-        })
+        });
       
       
     }

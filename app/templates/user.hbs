@@ -6,13 +6,15 @@
 <div class="profile_content1">
   <img src="profile1.jpg" height="70" width="70"> 
   <p>{{#link-to "user" id activeClass="selected"}}{{name}}{{/link-to}}</p>
+  @{{id}}
+  <p><button type="submit" class="Follow-button" {action 'follow'}}>Follow</button></p>
   <!--{{uppercaseName}} -->
 </div>
 
 <div class="profile_content2">
-  {{#link-to "user" id activeClass="selected"}}Posts{{/link-to}}	
-  {{#link-to "user.followers" id activeClass="selected"}}Followers{{/link-to}}		
-  {{#link-to "user.following" id activeClass="selected"}}Following{{/link-to}}
+  {{#link-to "user" activeClass="selected"}}Posts{{/link-to}}	
+  {{#link-to "user.followers" activeClass="selected"}}Followers{{/link-to}}		
+  {{#link-to "user.following" activeClass="selected"}}Following{{/link-to}}
   <p>{{outlet}}</p>
 </div>
 

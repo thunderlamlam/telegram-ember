@@ -19,4 +19,4 @@ export default {
     app.inject('controller', 'session', 'session:main');
   }
   // code
-}
+};

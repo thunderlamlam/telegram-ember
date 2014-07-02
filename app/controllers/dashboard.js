@@ -1,7 +1,7 @@
 export default Ember.ObjectController.extend({
   isEditing: false,
   uppercaseName: function() {
-    console.log('The session object is accessible from any controller:', this.get('session.user.name'), this.get('session.isAuthenticated'));
+    //console.log('The session object is accessible from any controller:', this.get('session.user.name'), this.get('session.isAuthenticated'));
     return this.get('model').get('name').toUpperCase();
   }.property('model.name'),
 
@@ -17,9 +17,7 @@ export default Ember.ObjectController.extend({
   txtCount: function() {
   	var maxLength = 140;
     return maxLength - this.get('postBody.length');
-  }.property('postBody')
-
-  ,
+  }.property('postBody'),
 
   characters: function() {
     return this.get('postBody.length') === 1 ? 'character' : 'characters';

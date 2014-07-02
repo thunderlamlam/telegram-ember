@@ -99,7 +99,7 @@ input:-moz-placeholder {
 	height: 60px; 
 	background-color:white;
 	text-align: center;
-	top: 20%;
+	top: 10%;
 
 
 }
@@ -107,7 +107,7 @@ input:-moz-placeholder {
 .profile_content2 {
 	background:white;
 	position:absolute; 
-	top: 60%;
+	top: 45%;
 	left: 42%;
 	text-align: center;
 	border-bottom: 1px solid #0084B2;
@@ -227,6 +227,22 @@ input:-moz-placeholder {
 	padding:5px;
 	left: 10%;
 	top: 80%;
+	text-decoration : none;
+	text-align: center;
+
+}
+
+.Follow-button {
+	
+	background:white;
+	height: 30px;
+	width: 80px;
+	font-size: 13px;
+	color: #0084B2;
+	font-weight: bold;
+	border: 1px solid #0084B2;
+	padding:5px;
+	
 	text-decoration : none;
 	text-align: center;
 
