@@ -1,6 +1,5 @@
 {{#each follower in controller}}
 <!-- follower is just a variable that can be named anything !-->
 
-<a {{bind-attr href=follower.id}}>{{follower.name}}</a>
-
+{{#link-to "user" follower activeClass="selected"}}{{follower.name}}{{/link-to}}
 {{/each}}

@@ -6,7 +6,7 @@ export default Ember.ObjectController.extend({
       var name = this.get('newName');
       var username = this.get('newUsername');
       var password = this.get('newPassword');
-      controller.transitionToRoute('/login');
+      controller.transitionToRoute('dashboard');
     }
     }
 });
