@@ -42,10 +42,17 @@ input:-moz-placeholder {
 	color: #787878 ;
 	top: 10%;
 	left: 27%;
-	text-align: center
+	text-align: left
 }
 
 
+textarea {
+  resize: none;
+  border:none; 
+  font-size: 15pt;
+  font-family: Open Sans;
+
+}
 .topdivider2 {
 	width: 590px; 
 	height: 50px;
@@ -69,7 +76,7 @@ input:-moz-placeholder {
 .dcontent3 {
 	background:white;
 	position:absolute; 
-	top: 60%;
+	top: 50%;
 	left: 27%;
 	text-align: center;
 	color:#787878 ;
