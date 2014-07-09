@@ -1,11 +1,7 @@
 <div class=dcontent>
-  {{#if isEditing}}  
-    <button type="submit" class="Publish-button" {{action 'doneEditing'}}>Done</button>
-  {{else}}
     <p>{{textarea value=postBody cols="80" rows="6"}}</p> 
     <p>{{txtCount}} {{characters}} remaining</p>
     <button type="submit" class="Publish-button" {{action 'publish'}}>Publish</button>
-  {{/if}}
 </div>
 <div class=dcontent2>
   Latest posts

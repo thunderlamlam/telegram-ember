@@ -1,5 +1,5 @@
 export default Ember.ObjectController.extend({
-  isEditing: false,
+  postBody: "",
   //uppercaseName: function() {
     //console.log('The session object is accessible from any controller:', this.get('session.user.name'), this.get('session.isAuthenticated'));
   //  return this.get('model').get('name').toUpperCase();
@@ -7,14 +7,9 @@ export default Ember.ObjectController.extend({
 
   actions: {
   	publish: function() {
-  	  this.set('isEditing', true);
-  	  },
-  	doneEditing: function() {
-      this.set('isEditing', false);
+  	  this.set('postBody', "");
   	  }
   },
-
-  postBody: "",
 
   txtCount: function() {
   	var maxLength = 140;

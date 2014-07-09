@@ -27,7 +27,7 @@ User.reopenClass({
     id: "maggie",
     name: "Maggie Lam",
     password: '1234',
-    profileImage: '/img/profile2.jpg',
+    profileImage: 'profile2.jpg',
     followers: ['emily'],
     //posts: '1',
     following: ['cece']
@@ -36,7 +36,7 @@ User.reopenClass({
     id: "cece",
     name: "Cecilia Lam",
     password: '1234',
-    profileImage: '/img/profile2.jpg',
+    profileImage: 'profile3.jpg',
     followers: ['maggie'],
     //posts: '1',
     following: ['emily']
