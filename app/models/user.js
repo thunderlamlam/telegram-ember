@@ -2,6 +2,7 @@ var User = DS.Model.extend({
   password: DS.attr('string'),
   name: DS.attr('string'),
   profileImage: DS.attr('string'),
+  posts: DS.hasMany('Post'),
   //followers: DS.attr('string'),
   followers: DS.hasMany('user'),
   //posts: DS.hasMany('post'),
@@ -16,6 +17,7 @@ User.reopenClass({
   {
     id: "emily",
     name: "Emily Lam",
+    posts: ['1'],
     password: '1234',
     profileImage: 'profile1.jpg',
     followers: ['maggie', 'cece'],
@@ -26,6 +28,7 @@ User.reopenClass({
   {
     id: "maggie",
     name: "Maggie Lam",
+    posts: ['2'],
     password: '1234',
     profileImage: 'profile2.jpg',
     followers: ['emily'],

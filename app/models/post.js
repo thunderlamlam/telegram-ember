@@ -1,5 +1,5 @@
 var Post = DS.Model.extend({
-  user: DS.belongsTo('User'),
+  author: DS.belongsTo('User'),
   body: DS.attr('string')
 
 });
@@ -8,11 +8,11 @@ Post.reopenClass({
   FIXTURES: [
   {
     id: "1",
-    user: 'emily',
+    author: 'emily',
     body: 'Hello World!'
   }, {
     id: "2",
-    user: 'maggie',
+    author: 'maggie',
     body: 'Hello Maggie!'
   }
 ]});
