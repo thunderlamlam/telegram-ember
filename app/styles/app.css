@@ -153,14 +153,27 @@ textarea {
 .profile_content2 {
 	background:white;
 	position:absolute; 
+	width: 500px;
+	height: 70px;
 	top: 45%;
-	left: 42%;
+	left: 30%;
 	text-align: center;
-	border-bottom: 1px solid #0084B2;
-	border-top: 1px solid #0084B2;
+	border-bottom: 1px solid #C0C0C0;
+	border-top: 1px solid #C0C0C0;
+	font-size: 20px;
 
 
 }
+
+.profile_content3 {
+	background:white;
+	position:absolute; 
+	top: 60%;
+	left: 44%;
+	text-align: center;
+
+}
+
 
 
 .Get-going {

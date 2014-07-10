@@ -1,6 +1,7 @@
 <div class="profile_topbar_center">
   <img src="dash-logo.png" height="42" width="125">	
-  <!--{{uppercaseName}} -->
+</div>
+<div class=topdivider>
 </div>
 
 <div class="profile_content1">
@@ -12,10 +13,15 @@
 </div>
 
 <div class="profile_content2">
+  <p>
   {{#link-to "user" activeClass="selected"}}Posts{{/link-to}}	
+  &nbsp;
   {{#link-to "user.followers" activeClass="selected"}}Followers{{/link-to}}		
-  {{#link-to "user.following" activeClass="selected"}}Following{{/link-to}}
+  &nbsp;
+  {{#link-to "user.following" activeClass="selected"}}Following{{/link-to}} 
+  
+</div>
+<div class="profile_content3">
   <p>{{outlet}}</p>
 </div>
-
 
