@@ -12,10 +12,17 @@
   <div class=dcontent2>
     Latest posts
   </div>	
-
   </div>
+
   <div class=dcontent3>
-    Stuff
+{{#each post in controller}}
+{{post.body}}
+ {{post.author.name}}
+ {{post.author.profileImage}}
+  <div class=dcontent4>
+  </div>
+{{/each}}
+
   </div>
 
 

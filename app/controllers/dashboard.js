@@ -1,4 +1,4 @@
-export default Ember.ObjectController.extend({
+export default Ember.ArrayController.extend({
   postBody: "",
   //uppercaseName: function() {
     //console.log('The session object is accessible from any controller:', this.get('session.user.name'), this.get('session.isAuthenticated'));

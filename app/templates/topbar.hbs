@@ -10,10 +10,10 @@
 </div>
 <div class="topbar_right">
   <!--<img src="profile1.jpg" height="40" width="40">-->
-  <img {{bind-attr src=profileImage}} height="40" width="40"> 
+  <img {{bind-attr src=session.user.profileImage}} height="40" width="40"> 
 </div>
 <div class="topbar_right1">
-  {{#link-to "user" id activeClass="selected"}}{{name}}{{/link-to}}
+  {{#link-to "user" session.user.id activeClass="selected"}}{{session.user.name}}{{/link-to}}
 </div>
   <!--{{uppercaseName}} -->
 
