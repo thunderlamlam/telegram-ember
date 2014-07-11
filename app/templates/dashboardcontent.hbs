@@ -15,14 +15,16 @@
   </div>
 
   <div class=dcontent3>
-{{#each post in controller}}
-{{post.body}}
- {{post.author.name}}
- {{post.author.profileImage}}
-  <div class=dcontent4>
-  </div>
-{{/each}}
+  {{#each post in controller}}
+  
+  <div class=dcontent5>
+  <img {{bind-attr src=post.author.profileImage}} height="40" width="40"> 
+  {{post.author.name}}
+  {{post.body}}
+  minutes ago Delete
 
+</div>
+  {{/each}}
   </div>
 
 

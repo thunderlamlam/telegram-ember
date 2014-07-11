@@ -2,7 +2,9 @@
 <!-- follower is just a variable that can be named anything !-->
 
 {{#link-to "user" follower activeClass="selected"}}
+<div>
  <img {{bind-attr src=follower.profileImage}} height="40" width="40"> 
 {{follower.name}}
+</div>
 {{/link-to}}
 {{/each}}

@@ -83,7 +83,7 @@ textarea {
 .dcontent2 {
 	background:white;
 	position:absolute; 
-	top: 25%;
+	top: 30%;
 	left: 40%;
 	text-align: center;
 	color: #787878 ;
@@ -92,10 +92,20 @@ textarea {
 .dcontent3 {
 	background:white;
 	position:absolute; 
-	top: 50%;
+	top: 45%;
 	left: 27%;
 	text-align: center;
 	color:#787878 ;
+}
+
+.dcontent5 {
+	background:white;
+	width: 590px; 
+	height: 60px;
+	text-align: left;
+	color:#787878 ;
+	border-bottom: 1px solid #C0C0C0;
+	
 }
 
 .topbar_left {
