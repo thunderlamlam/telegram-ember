@@ -1,5 +1,5 @@
 export default Ember.ObjectController.extend({
-  UserExisted: false,
+  userexisted: false,
 	actions: {
     create: function() {
       var controller = this;
@@ -9,18 +9,18 @@ export default Ember.ObjectController.extend({
 
       //if(this.store.find('user', username)){
       //  controller.setProperties({
-      //    UserExisted:true
+      //    userexisted:true
       //  });
       //}
       //else{
       //  controller.setProperties({
-      //    UserExisted:false
+      //    userexisted:false
       //  });
         
         //debugger;
 
         var person = this.store.createRecord('user', {
-          //id: username,
+          id: username,
           name: dname,
           password: dpassword
         });
