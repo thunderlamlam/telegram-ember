@@ -12,7 +12,7 @@ export default Ember.ArrayController.extend({
       var dpost = this.get('postBody');
       var dtwit = this.store.createRecord('post', {
         author: dauthor,
-        post: dpost
+        body: dpost
       });
 
       dtwit.save();
