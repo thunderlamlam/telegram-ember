@@ -15,12 +15,12 @@
   </div>
 
   <div class=dcontent3>
-    {{#each post in controller}}
+    {{#each dcpost in controller}}
       <div class=dcontent5>
-        <p><img {{bind-attr src=post.author.profileImage}} height="40" width="40"> 
-        {{post.author.name}} </p>
-        {{post.body}}
-        <p>minutes ago Delete</p>
+        <p><img {{bind-attr src=dcpost.author.profileImage}} height="40" width="40"> 
+        {{dcpost.author.name}} </p>
+        {{dcpost.body}}
+        <p> 20 minutes ago <button type="submit" class="Remove-button" {{action 'remove'}}>Delete</button></p>
       </div>
     {{/each}}
   </div>

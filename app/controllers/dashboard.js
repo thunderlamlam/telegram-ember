@@ -17,7 +17,16 @@ export default Ember.ArrayController.extend({
 
       dtwit.save();
       this.set('postBody', "");
-  	  }
+  	  },
+
+    remove: function() {
+      console.log("deleting");
+      var rpost = this.get('model');
+      console.log(rpost);
+      rpost.deleteRecord();
+      rpost.save();
+      console.log("deleted");
+      }
   },
 
   txtCount: function() {

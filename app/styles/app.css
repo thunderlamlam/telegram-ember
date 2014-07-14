@@ -300,6 +300,20 @@ textarea {
 
 }
 
+.Remove-button {
+	position:absolute;
+	background:white;
+	height: 20px;
+	width: 50px;
+	font-size: 13px;
+	color: #008CB8;
+	font-weight: bold;
+	border: 1px solid #FFFFFF;
+	text-decoration : none;
+	text-align: center;
+
+}
+
 .Login-button {
 	position:absolute;
 	background:white;
