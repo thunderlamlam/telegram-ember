@@ -8,7 +8,7 @@ export default Ember.ArrayController.extend({
   actions: {
   	publish: function() {
       //this.get('postBody').save();
-      var dauthor = this.get('session.user.id');
+      var dauthor = this.session.user;
       var dpost = this.get('postBody');
       var dtwit = this.store.createRecord('post', {
         author: dauthor,
