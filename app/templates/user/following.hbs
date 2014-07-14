@@ -1,6 +1,5 @@
 {{#each following in controller}}
-{{#link-to "user" following activeClass="selected"}}
-{{/link-to}}
-<p><img {{bind-attr src=following.profileImage}} height="40" width="40"> 
-{{following.name}}
+<div>{{#link-to "user" following activeClass="selected"}}
+<img {{bind-attr src=following.profileImage}} height="40" width="40">
+{{following.name}}{{/link-to}}</div>
 {{/each}}
