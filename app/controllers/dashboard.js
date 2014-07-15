@@ -12,17 +12,16 @@ export default Ember.ArrayController.extend({
       var dpost = this.get('postBody');
       var dtwit = this.store.createRecord('post', {
         author: dauthor,
-        body: dpost
+        body: dpost,
+        date: new Date()
       });
 
       dtwit.save();
       this.set('postBody', "");
   	  },
 
-    remove: function() {
+    remove: function(rpost) {
       console.log("deleting");
-      var rpost = this.get('model');
-      console.log(rpost);
       rpost.deleteRecord();
       rpost.save();
       console.log("deleted");

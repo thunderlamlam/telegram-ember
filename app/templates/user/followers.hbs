@@ -1,5 +1,5 @@
 {{#each follower in controller}}
-<div>{{#link-to "user" follower activeClass="selected"}}
+<div class="followersDivider">{{#link-to "user" follower activeClass="selected"}}
 <img {{bind-attr src=follower.profileImage}} height="40" width="40">
 {{follower.name}}{{/link-to}}</div>
 {{/each}}
