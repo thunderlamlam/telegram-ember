@@ -1,5 +1,7 @@
 export default Ember.ArrayController.extend({
   postBody: "",
+  sortProperties: ['date'],
+  sortAscending: false,
   //uppercaseName: function() {
     //console.log('The session object is accessible from any controller:', this.get('session.user.name'), this.get('session.isAuthenticated'));
   //  return this.get('model').get('name').toUpperCase();
