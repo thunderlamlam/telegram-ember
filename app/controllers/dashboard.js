@@ -23,10 +23,8 @@ export default Ember.ArrayController.extend({
   	  },
 
     remove: function(rpost) {
-      console.log("deleting");
       rpost.deleteRecord();
       rpost.save();
-      console.log("deleted");
       }
   },
 

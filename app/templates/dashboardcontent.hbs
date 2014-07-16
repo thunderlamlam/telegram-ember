@@ -21,7 +21,11 @@
         {{dcpost.author.name}} </p>
         {{dcpost.body}}
 
-        <p> {{dcpost.prettydate}} <button type="submit" class="Remove-button" {{action 'remove' dcpost}}>Delete</button></p>
+        <p> {{dcpost.prettydate}} 
+        {{#if isSelf}}
+          <button type="submit" class="Remove-button" {{action 'remove' dcpost}}>Delete</button>
+        {{/if}}
+        </p>
       </div>
     {{/each}}
 
