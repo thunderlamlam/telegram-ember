@@ -5,8 +5,8 @@
 </div>
 
 <div class="profile_content1">
-  <img {{bind-attr src=profileImage}} height="70" width="70">  
-  <p>{{#link-to "user" id activeClass="selected"}}{{name}}{{/link-to}}</p>
+  {{#link-to "user" id activeClass="selected"}}<img {{bind-attr src=profileImage}} height="70" width="70">  
+  <p>{{name}}{{/link-to}}</p>
   @{{id}}
   {{#if followed}}
     <p><button type="submit" class="Follow-button" {{action 'unfollow'}}>Unfollow</button>

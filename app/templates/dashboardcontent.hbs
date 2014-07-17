@@ -17,8 +17,8 @@
   <div class=dcontent3>
     {{#each dcpost in controller itemController="post"}}
       <div class=dcontent5>
-        <p><img {{bind-attr src=dcpost.author.profileImage}} height="40" width="40"> 
-        {{dcpost.author.name}} </p>
+        <p>{{#link-to "user" dcpost.author.id activeClass="selected"}}<img {{bind-attr src=dcpost.author.profileImage}} height="40" width="40"> 
+        {{dcpost.author.name}} {{/link-to}}</p>
         {{dcpost.body}}
 
         <p> {{dcpost.prettydate}} 
