@@ -1,3 +1,14 @@
-{{#each post in controller}}
-  <div>{{post.body}}</div>
+{{#each dcpost in controller itemController="post"}}
+  <div class=dcontent6>
+    <p><img {{bind-attr src=dcpost.author.profileImage}} height="40" width="40"> 
+      {{dcpost.author.name}} 
+    </p>
+    {{dcpost.body}}
+
+    <p> {{dcpost.prettydate}} 
+      {{#if isSelf}}
+      <button type="submit" class="Remove-button" {{action 'remove' dcpost}}>Delete</button>
+      {{/if}}
+    </p>
+  </div>
 {{/each}}
