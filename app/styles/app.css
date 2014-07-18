@@ -42,14 +42,17 @@ a:active {
 }
 
 .topdivider {
-	width: 1400px; 
+	width: 1600px; 
 	background:white;
 	position:absolute; 
+	left: 0%;
 	top: 8%;
 	text-align: center;
 	border-top: 1px solid #C0C0C0;
+	box-shadow:0 0 4px rgba(0,0,0,0.3); 
 
 }
+
 
 .dcontent {
 	background:white;
