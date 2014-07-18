@@ -121,6 +121,30 @@ textarea {
 	
 }
 
+.followersDivider{
+	padding-top: 10px;
+	overflow: hidden;
+	background:white;
+	width: 500px; 
+	height: 60px;
+	text-align: left;
+	color:#787878 ;
+	border-bottom: 1px solid #C0C0C0;
+	
+}
+
+.followingDivider{
+	padding-top: 10px;
+	overflow: hidden;
+	background:white;
+	width: 500px; 
+	height: 60px;
+	text-align: left;
+	color:#787878 ;
+	border-bottom: 1px solid #C0C0C0;
+	
+}
+
 
 .topbar_left {
 	position:absolute; 
