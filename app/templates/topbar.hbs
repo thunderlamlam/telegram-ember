@@ -6,14 +6,11 @@
 </div>
 <div class="topbar_center">
   <img src="dash-logo.png" height="42" width="125">	
-  <!--{{uppercaseName}} -->
 </div>
 <div class="topbar_right">
-  <!--<img src="profile1.jpg" height="40" width="40">-->
   {{#link-to "user" session.user.id activeClass="selected"}}<img {{bind-attr src=session.user.profileImage}} height="40" width="40"> 
 </div>
 <div class="topbar_right1">
   {{session.user.name}}{{/link-to}}
 </div>
-  <!--{{uppercaseName}} -->
 
