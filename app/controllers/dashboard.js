@@ -1,5 +1,5 @@
 export default Ember.ArrayController.extend({
-  postBody: "",
+  postBody: '',
   sortProperties: ['date'],
   sortAscending: false,
   //uppercaseName: function() {

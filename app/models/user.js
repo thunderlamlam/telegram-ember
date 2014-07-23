@@ -36,7 +36,6 @@ User.reopenClass({
     password: '1234',
     profileImage: 'profile3.jpg',
     //followers: ['maggie'],
-
     //following: ['emily']
   }
 
