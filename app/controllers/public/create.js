@@ -1,5 +1,8 @@
 export default Ember.ObjectController.extend({
   userexisted: false,
+  newUsername: '',
+  newPassword: '',
+  newName: '',
 	actions: {
     create: function() {
       var controller = this;
