@@ -1,23 +1,25 @@
 export default Ember.ObjectController.extend({
-  userexisted: false,
-  newUsername: '',
-  newPassword: '',
-  newName: '',
+  content: null,
+  my: null,
+  userExisted: false,
+  newCusername: '',
+  newCpassword: '',
+  newCname: '',
 	actions: {
     create: function() {
       var controller = this;
-      var dname = this.get('newName');
-      var username = this.get('newUsername');
-      var dpassword = this.get('newPassword');
+      var dname = this.get('newCname');
+      var username = this.get('newCusername');
+      var dpassword = this.get('newCpassword');
 
       //if(this.store.find('user', username)){
       //  controller.setProperties({
-      //    userexisted:true
+      //    userExisted:true
       //  });
       //}
       //else{
       //  controller.setProperties({
-      //    userexisted:false
+      //    userExisted:false
       //  });
         
         //debugger;
