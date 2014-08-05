@@ -9,7 +9,7 @@ export default Ember.ObjectController.extend({
       //get the username and password from the template
       var username = this.get('newUsername');
       var password = this.get('newPassword');
-      console.log(username);
+      //console.log(username);
       //console.log(password);
       //userobject is returned by my query
       var promise = this.store.find('user', {id: username, password: password, operation: 'login'});      

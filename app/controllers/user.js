@@ -4,6 +4,11 @@ export default Ember.ObjectController.extend({
   	  },
   	unfollow: function(){
 
+  	},
+  	logout: function(){
+  	  var controller = this;
+  	  $.get( "logout" );
+  	  controller.transitionToRoute('public.login');
   	}
   },
 
