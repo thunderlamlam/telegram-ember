@@ -6,6 +6,7 @@ export default Ember.Route.extend({
   //}
   model: function () {
     //return this.modelFor('user').get('following');
-    return this.store.find('user');
+    this.store.find("user", {followedBy: this.get('session').get("user").get("id")});
+
   }
 });
