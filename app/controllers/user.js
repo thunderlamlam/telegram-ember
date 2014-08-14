@@ -1,18 +1,38 @@
 export default Ember.ObjectController.extend({
   actions: {
   	follow: function() {
-      var duser = this.session.user;
-      var dFollow =  this.store.push('user', {
-      id: duser,
-      following: DS.hasMany('User') //what to do here?
+      var controller = this;
+      $.ajax({
+        url: '/api/follow/',
+        type: 'POST',
+        dataType: 'json',
+        data: {},
+        success: function() {
+          controller.transitionToRoute('user.index');
+        },
+        error: function(err) {
+          alert('Sorry, please try clicking Follow again!');
+          console.log(err);
+
+        }
       });
-
-      dFollow.save();
-
-  	  },
+    },
   	unfollow: function(){
-      console.log("hello");
+      var controller = this;
+      $.ajax({
+        url: '/api/unfollow/',
+        type: 'POST',
+        dataType: 'json',
+        data: {},
+        success: function() {
+          controller.transitionToRoute('user.index');
+        },
+        error: function(err) {
+          alert('Sorry, please try clicking Unfollow again!');
+          console.log(err);
 
+        }
+      });
   	},
   	logout: function(){
   	  var controller = this;
