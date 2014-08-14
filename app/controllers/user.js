@@ -6,13 +6,14 @@ export default Ember.ObjectController.extend({
         url: '/api/follow/',
         type: 'POST',
         dataType: 'json',
-        data: {},
+        data: '',
         success: function() {
           controller.transitionToRoute('user.index');
+          console.log("success");
         },
         error: function(err) {
           alert('Sorry, please try clicking Follow again!');
-          console.log(err);
+          console.log("error" + err);
 
         }
       });
@@ -23,13 +24,13 @@ export default Ember.ObjectController.extend({
         url: '/api/unfollow/',
         type: 'POST',
         dataType: 'json',
-        data: {},
+        data: '',
         success: function() {
           controller.transitionToRoute('user.index');
         },
         error: function(err) {
           alert('Sorry, please try clicking Unfollow again!');
-          console.log(err);
+          console.log("error" + err);
 
         }
       });
