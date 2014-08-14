@@ -7,7 +7,7 @@ export default Ember.ArrayController.extend({
         url: '/api/follow/',
         type: 'POST',
         dataType: 'json',
-        data: {followingUsername: 'emily'},
+        data: {followingUsername: user},
         success: function(data) {
           controller.transitionToRoute('user.following');
           console.log("success" + data);
@@ -18,13 +18,13 @@ export default Ember.ArrayController.extend({
         }
       });
     },
-    unfollow: function(){
+    unfollow: function(user){
       var controller = this;
       $.ajax({
         url: '/api/unfollow/',
         type: 'POST',
         dataType: 'json',
-        data: {followingUsername: 'emily'},
+        data: {followingUsername: user},
         success: function() {
           controller.transitionToRoute('user.following');
         },
