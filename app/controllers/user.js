@@ -1,4 +1,5 @@
 export default Ember.ObjectController.extend({
+
   actions: {
   	follow: function() {
       var controller = this;
@@ -6,15 +7,14 @@ export default Ember.ObjectController.extend({
         url: '/api/follow/',
         type: 'POST',
         dataType: 'json',
-        data: '',
-        success: function() {
+        data: {followingUsername: 'emily'},
+        success: function(data) {
           controller.transitionToRoute('user.index');
-          console.log("success");
+          console.log("success" + data);
         },
         error: function(err) {
           alert('Sorry, please try clicking Follow again!');
           console.log("error" + err);
-
         }
       });
     },
@@ -24,7 +24,7 @@ export default Ember.ObjectController.extend({
         url: '/api/unfollow/',
         type: 'POST',
         dataType: 'json',
-        data: '',
+        data: {followingUsername: 'emily'},
         success: function() {
           controller.transitionToRoute('user.index');
         },

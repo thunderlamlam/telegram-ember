@@ -2,6 +2,6 @@
 <div class="followingDivider">{{#link-to "user" following activeClass="selected"}}
 <img {{bind-attr src=following.profileImage}} height="40" width="40">
 {{following.name}}{{/link-to}}
- <button type="submit" style="float: right;" class="Follow-button" {{action 'follow'}}>Follow</button>
+ <button type="submit" style="float: right;" class="Follow-button" {{action 'follow' following}}>Follow</button>
 </div>
 {{/each}}

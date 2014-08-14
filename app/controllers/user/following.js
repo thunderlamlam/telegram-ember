@@ -1,19 +1,20 @@
 export default Ember.ArrayController.extend({
+
   actions: {
-  	follow: function() {
+  	follow: function(user) {
       var controller = this;
       $.ajax({
         url: '/api/follow/',
         type: 'POST',
         dataType: 'json',
-        data: '',
-        success: function() {
+        data: {followingUsername: 'emily'},
+        success: function(data) {
           controller.transitionToRoute('user.following');
-          console.log("success");
+          console.log("success" + data);
         },
         error: function(err) {
         	alert('Sorry, please try clicking Follow again!');
-        	console.log("error" + err);
+        	console.log("error" + user);
         }
       });
     },
@@ -23,13 +24,13 @@ export default Ember.ArrayController.extend({
         url: '/api/unfollow/',
         type: 'POST',
         dataType: 'json',
-        data: '',
+        data: {followingUsername: 'emily'},
         success: function() {
           controller.transitionToRoute('user.following');
         },
         error: function(err) {
-        	alert('Sorry, please try clicking Unfollow again!' + err);
-        	console.log("error" + err);
+        	alert('Sorry, please try clicking Unfollow again!');
+        	
 
         }
       });
