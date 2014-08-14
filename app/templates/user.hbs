@@ -14,9 +14,9 @@
   <p>{{name}}{{/link-to}}</p>
   @{{id}}
   {{#if followed}}
-    <p><button type="submit" class="Follow-button" {{action 'unfollow'}}>Unfollow</button>
+    <p><button type="submit" class="Follow-button" {{action 'unfollow' id}}>Unfollow</button>
     {{else}}
-    <p><button type="submit" class="Follow-button" {{action 'follow'}}>Follow</button>
+    <p><button type="submit" class="Follow-button" {{action 'follow' id}}>Follow</button>
   {{/if}}
 </div>
 
