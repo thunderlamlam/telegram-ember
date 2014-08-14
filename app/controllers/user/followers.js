@@ -1,6 +1,6 @@
 export default Ember.ArrayController.extend({
   actions: {
-  	follow: function() {
+  	follow: function(user) {
       var controller = this;
 
       $.ajax({
@@ -14,7 +14,7 @@ export default Ember.ArrayController.extend({
         },
         error: function(err) {
           alert('Sorry, please try clicking Follow again!');
-          console.log("error" + err);
+          console.log("error" + err + user);
         }
       });
     },

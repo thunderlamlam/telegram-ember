@@ -1,36 +1,36 @@
 export default Ember.ObjectController.extend({
 
   actions: {
-  	follow: function() {
+  	follow: function(user) {
       var controller = this;
       $.ajax({
         url: '/api/follow/',
         type: 'POST',
         dataType: 'json',
-        data: {followingUsername: 'emily'},
+        data: {followingUsername: user},
         success: function(data) {
           controller.transitionToRoute('user.index');
           console.log("success" + data);
         },
         error: function(err) {
           alert('Sorry, please try clicking Follow again!');
-          console.log("error" + err);
+          console.log("error" + err + user);
         }
       });
     },
-  	unfollow: function(){
+  	unfollow: function(user){
       var controller = this;
       $.ajax({
         url: '/api/unfollow/',
         type: 'POST',
         dataType: 'json',
-        data: {followingUsername: 'emily'},
+        data: {followingUsername: user},
         success: function() {
           controller.transitionToRoute('user.index');
         },
         error: function(err) {
           alert('Sorry, please try clicking Unfollow again!');
-          console.log("error" + err);
+          console.log("error" + err + user);
 
         }
       });
