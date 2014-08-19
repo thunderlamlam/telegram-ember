@@ -44,7 +44,7 @@ export default Ember.ObjectController.extend({
   },
 
   isFollowed: function() {
-    return false;
+
     }
 
     
