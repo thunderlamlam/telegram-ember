@@ -13,9 +13,12 @@
   {{#link-to "user" id activeClass="selected"}}<img {{bind-attr src=profileImage}} height="70" width="70">  
   <p>{{name}}{{/link-to}}</p>
   @{{id}}
-
-    <p><button type="submit" class="Follow-button" {{action 'follow' id}}>Follow</button>
-
+  {{#if followed}}
+    <p><button type="submit" class="Follow-button" {{action 'unfollow' id}}>Unfollow</button>
+     {{else}}
+   <p><button type="submit" class="Follow-button" {{action 'follow' id}}>Follow</button>
+   {{/if}}
+   
 </div>
 
 <div class="profile_content2">

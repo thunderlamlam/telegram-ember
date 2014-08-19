@@ -24,7 +24,7 @@ export default Ember.ObjectController.extend({
         url: '/api/unfollow/',
         type: 'POST',
         dataType: 'json',
-        data: {followingUsername: user},
+        data: {unfollowingUsername: user},
         success: function() {
           controller.transitionToRoute('user.index');
         },
